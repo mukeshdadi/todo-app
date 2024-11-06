@@ -1,0 +1,225 @@
+.list-main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 4px 6px;
+}
+.list-top-section {
+  display: flex;
+  align-items: center;
+}
+.eachitem {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 3px;
+  width: 100%;
+}
+.empty-message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #c4e0f4;
+  border: 2px solid #bcdff1;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.clock-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+.lsa-time{
+  margin-left: 4px;
+}
+.clock-box .fa-clock {
+  margin-right: 5px;
+  color: #e91c1c;
+}
+.todo-item:hover {
+  background-color: #e6e6fa;
+  border-color: #a0c6e0;
+}
+.top-left-corner {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+.top-left-corner i {
+  margin-right: 5px;
+  margin-top: 3px;
+}
+.list-id-section{
+  display: flex;
+  flex-direction: row;
+}
+.top-right-corner {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.scheduletask-title {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.date-stamp {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: right;
+  margin-top: -5px;
+  margin-left: auto;
+}
+.open {
+  background-color: #3498db;
+}
+.inprogress {
+  background-color: #e67e22;
+}
+.completed {
+  background-color: #27ae60;
+}
+.time-info {
+  font-weight: 500;
+}
+.alert {
+  max-width: 80%;
+  font-size: 12px;
+  padding: 3px 4px;
+}
+@media(max-width:1140px){
+  .top-right-corner{
+    margin-top: 35px;
+  }
+  .item .scheduletask-title{
+    margin-top: 55px;
+  }
+}
+@media (max-width: 900px) {
+  .todo-item {
+    flex-direction: column;
+    padding: 6px;
+  }
+  .top-left-corner {
+    position: relative;
+    top: 0;
+    left: 0;
+    gap: 2px;
+  }
+  .top-right-corner{
+    margin-top: 50px;
+  }
+  .item .scheduletask-title{
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .eachitem {
+    width: 100%;
+  }
+  .todo-item {
+    padding: 6px;
+  }
+  .clock-box{
+    padding: 5px 5px;
+  }
+  .list-top-section{
+    margin-top: -20px;
+  }
+  .scheduletask-title{
+    font-size: 14px;
+  }
+  .date-stamp, .time-info {
+    font-size: 12px;
+  }
+  .list-top-section{
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 600px) {
+  .alert{
+    width: 70%;
+    font-size: small;
+  }
+  .a
+  .list-top-section {
+    display: flex;
+    width: 100%;
+  }
+  .scheduletask-title{
+    margin-top: -10px;
+  }
+  .top-left-corner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .list-id-section{
+    font-size:14px ;
+  }
+  .clock-box{
+    font-size: 12px;
+    max-width: 60px;
+  }
+
+  .ant-card-body{
+    padding: 5px 0px;
+  }
+  .top-left-corner .clock-box{
+    width: 55%;
+  }
+  .top-right-corner {
+    width: 60%;
+    padding: 0px -10px;
+  }
+}
+:where(.css-dev-only-do-not-override-14i19y2).ant-card .ant-card-body {
+  padding: 10px;
+}
+.list-top-section {
+  padding: -5px;
+  margin: 0px 0px;
+}
+
+@media(max-width:500px) {
+  .top-right-corner{
+    justify-content: right;
+    margin-top: 12px;
+  }
+  .item{
+    margin-top: -40px;
+    
+  }
+}
+@media(max-width:440px){
+  .top-left-corner .list-id-section i{
+    margin-top: 4px;
+  }
+  .alert{
+    width: 60%;
+    height: fit-content;
+  }
+  .item{
+    margin-top: -25px;
+    
+  }
+}

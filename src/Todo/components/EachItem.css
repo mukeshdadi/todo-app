@@ -1,0 +1,102 @@
+.EachItem {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: -10px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    padding: 20px;
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+body {
+    overflow: hidden;
+}
+.card {
+    width: 600px;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    max-height: 90vh;
+    overflow-y: auto; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.schedule-title {
+    text-align: center;
+    color: #007BFF;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.repeat-day-containers3 {
+    display: flex;
+    gap: 4px;
+}
+
+.eachItem-repeat span {
+    display: flex;
+}
+.repeat-time-section {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 32px;
+    background-color: #f0f0f0;
+}
+.repeat-day-buttons4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #87ceeb;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+.repeat-day-buttons:hover {
+    background-color: #7bb9d9;
+}
+
+.ant-typography {
+    font-family: 'Arial', sans-serif;
+}
+
+.ant-descriptions-item-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.ant-descriptions-item-content {
+    color: #343a40;
+}
+
+body {
+    overflow: hidden;
+}
+@media(max-width:500px) {
+    .EachItem {
+        margin-top: 20px;
+    }
+}
+@media(max-width:420px) {
+    .EachItem {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,857 @@
+.addMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 80vh;
+  z-index: 900;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+}
+
+.selectdate {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+.eachoption {
+  display: flex;
+  align-items: center;
+  
+}
+.from h6,
+.to h6 {
+  margin-bottom: 5px;
+}
+
+.closing-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(248, 242, 242);
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 25px;
+  height: 30px; 
+  border: none; 
+  padding: 0; 
+  border-radius: 50%;
+}
+
+.closing-icon .anticon {
+  font-size: 20px; 
+  line-height: 1; 
+}
+.add-section {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #b2b2b6;
+  min-width: 450px;
+  border: none;
+  overflow-y: hidden;
+  border-radius: 10px;
+  padding: 20px; 
+  margin-top: 65px;
+}
+.add-section form{
+  width: 80%;
+}
+.success-button{
+  display: flex;
+  align-items: center;
+  height: 32px;
+  
+}
+
+.form-control[type="date"] {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 16px;
+  width: 150px;
+  color: #495057;
+}
+
+.form-control[type="date"]:focus {
+  border-color: #80bdff;
+  background-color: #e9ecef;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+form {
+  padding: 10px 0;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+  width: 350px;
+  justify-content: center;
+  gap: 3px;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+input {
+  height: 36px;
+  border: 1px solid rgb(219, 222, 224);
+  padding: 8px;
+}
+
+textarea {
+  resize: vertical;
+  padding: 8px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 0px 15px;
+}
+
+.role-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.role-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1; 
+}
+
+.selected-roles {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.container{
+  margin-top: 60px;
+}
+.form-group.lsa-exceeded {
+  border: 2px solid #ff0000; 
+  background-color: #ffe6e6; 
+}
+
+.lsa-error-text {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.role-checkboxes{
+  margin-top: 10px;
+}
+.openInput{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  max-width: 100%;
+
+  
+}
+
+.openInput input {
+  flex: 1; 
+  max-width: 300px; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+.closing-icon{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 2px 10px;
+  margin: 2px 10px;
+  
+}
+.get-btn{
+  width: 50px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.role-checkboxes label input{
+  width: 20px;
+  height: 20px;
+}
+.select-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.open-btn{
+  width: 60px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.blur-background .add-section{
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 100vh; 
+  padding: 20px;
+
+  
+}
+
+.dialog-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-height: calc(100vh - 140px);
+  z-index: 901;
+  color: black;
+
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none;
+  
+}
+.dialog-box::-webkit-scrollbar {
+  display: none; 
+}
+.box{
+  display: flex;
+  flex-direction: column;
+}
+.from-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 2px;
+  
+ 
+  margin-bottom: 10px;
+}
+.from-section h6{
+  flex-basis: 50%;
+  text-align: start;
+}
+.from-section .DatePicker{
+  flex-basis: 50%;
+  text-align: start;
+  margin-left: -95px;
+  
+}
+.dialog-button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dialog-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dialog-button.cancel {
+  background-color: #ccc;
+  color: black;
+}
+
+.dialog-button.done {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dialog-button:hover {
+  opacity: 0.8;
+}
+
+
+.eachoption{
+  
+  margin-bottom: 10px;
+}
+.eachoption2{
+ 
+  margin-bottom: 10px;
+}
+.eachoption2 .eachoption{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  margin-bottom: 5px;
+  margin-right: 80px;
+}
+.ends-section{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ends-section-option {
+  margin-left: 8px;
+}
+.ends-section input[type="date"] {
+  width: 175px;
+  margin-left: -10PX;
+}
+.ends-date-input {
+  margin-left: 10px;
+}
+.bottom-button-section{
+  display: flex;
+  justify-content: end;
+}
+.bottom-button-section div{
+  cursor: pointer;
+}
+.done-button{
+  margin-left: 30px;
+}
+.lsa-section{
+  margin-bottom: 15px;
+}
+.lsa-input-section{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.add-more-button{
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+.lsa-delete-icon{
+  margin-left: 15px;
+}
+.lsa-sections{
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+}
+.lsa-sections2{
+  display: flex;
+  align-items: center;
+  flex-basis: 40%;
+}
+.lsa-info{
+  margin-right: 10px;
+}
+.lsa-sections .time-picker{
+  height: 32px;
+  width: 120px;
+}
+.lsa-sections input{
+  width: 100px;
+  
+}
+.hrs-input{
+  margin-left: 20px;
+}
+.hrs-input .input-number{
+  width: 50px;
+  height: 32px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.select-days {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  margin: 20px 15px;
+}
+
+.day-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.day-button.selected {
+  background-color: #2196F3; 
+  color: #fff;
+}
+.radio-label {
+  cursor: pointer;
+  
+}
+
+.eachoption, .eachoption2 {
+  display: flex;
+  align-items: center;
+}
+
+.eachoption2 .each-option-date {
+  margin-left: 10px; 
+}
+
+.months-section{
+  display: flex;
+  align-items: center;
+}
+.months-section .input-number{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 32px;
+  margin-right: 6px;
+}
+.months-section h6{
+  flex-basis: 40%;
+}
+.months-repeat{
+  margin-right: 15px;
+}
+.end-date-section{
+  display: flex;
+  align-items: center;
+}
+.end-date-section h6{
+  margin-right: 20px;
+}
+
+.end-date-section-monthly{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.end-date-section-monthly h6{
+  margin-right: 32px;
+  
+}
+.from-section-weekly{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.from-section-weekly h6{
+  margin-right: 20px;
+}
+.select-days-weekly{
+  display: flex;
+  justify-content: start;
+  gap: 7px;
+  margin: 10px 15px;
+}
+.days-selection-section-weekly{
+  margin-top: -5px;
+}
+.from-section-monthly{
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+}
+.from-section-monthly h6{
+  margin-right: 20px;
+}
+.months-section-monthly{
+  display: flex;
+  margin:10px 0px ;
+}
+.months-section-monthly h6{
+  margin-right: 20px;
+}
+.months-section-monthly .input-number{
+  margin-right: 7px;
+}
+.lsa-section-monthly{
+  margin: 15px 0px;
+  
+}
+.months-section-monthly .input-number-monthly {
+  width: 50px;
+  height: 32px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+
+}
+.bottom-button-section-monthly{
+  display: flex;
+  justify-content: end;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.bottom-button-section-monthly div{
+  cursor: pointer;
+}
+.months-section-monthly{
+  display: flex;
+  
+}
+.weekly-enddate-bottom-section{
+  display: flex;
+  align-items: center;
+  
+}
+.weekly-selection{
+  display: flex;
+  flex-direction: column;
+  margin-left: 22px;
+}
+.weekly-enddate-top-section {
+  display: flex;
+  margin-bottom: 15px;
+  
+}
+.weekly-enddate-top-section .week-select-dropdown{
+  width: 90px;
+  margin-right: 10px;
+}
+.weekly-enddate-bottom-section{
+  display: flex;
+  margin-bottom: 5px;
+}
+.center-message{
+  margin: 8px 0px;
+}
+.day-button {
+  background-color: #e0e0e0;
+  margin: 5px;
+}
+.day-button.selected {
+  background-color: #2196F3;
+  color: white;
+}
+.weekly-box{
+  margin-top: 25px;
+}
+.daily-time-picker{
+  width: 80px;
+  height: 32px;
+  border-radius: 5px;
+  
+}
+.monthly-date-picker {
+  width: 125px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+  
+}
+.daily-input-number{
+  width: 50px;
+  margin-right: 5px;
+  height: 32px;
+  border-radius: 5px;
+  -webkit-appearance: none; 
+  -moz-appearance: textfield; 
+  appearance: none; 
+  border: 1px solid #ccc;
+  
+}
+.daily-input-number::-webkit-outer-spin-button,
+.daily-input-number::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important; 
+  display: block !important; 
+}
+.add-title-select{
+  max-width: 400px;
+}
+.get-button{
+ 
+  margin-left: 8px;
+  
+}
+.open-button{
+  margin-left: 8px;
+ 
+}
+.down-button-section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  
+}
+.down-button{
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-top: 10px;
+}
+.date-picker {
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  padding: 8px 12px; 
+  font-size: 16px; 
+  color: #333; 
+  width: 100%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+}
+
+.date-picker:focus {
+  border-color: #007bff; 
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
+  background-color: #fff; 
+  outline: none; 
+}
+
+.date-picker:hover {
+  border-color: #007bff; 
+}
+
+.date-picker:disabled {
+  background-color: #e9ecef; 
+  color: #6c757d; 
+  border-color: #ced4da; 
+  cursor: not-allowed; 
+  opacity: 0.65; 
+}
+
+@media (max-width: 768px) {
+  .addMain {
+    padding: 10px; 
+  }
+  .dialog-box {
+    width: 90%; 
+  }
+}
+
+@media(max-width:620px){
+  .add-section{
+    margin-left: 30px;
+  }
+}
+
+@media(max-width:510px) {
+  .add-section{
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .dialog-overlay{
+    font-size: small;
+    margin-left: 10px;
+  }
+  .select-days{
+    gap: 10px;
+    margin: 20px 10px;
+  }
+  .box{
+    margin-left: -15px;
+  }
+  .addMain {
+    padding: 10px; 
+    min-height: auto; 
+  }
+  .add-section {
+    min-width: 100%; 
+    padding: 15px; 
+  }
+  .input-section {
+    width: 100%; 
+  }
+  .form-control[type="date"] {
+    width: 100%; 
+  }
+  
+  .closing-icon {
+    font-size: 20px; 
+    padding: 0; 
+  }
+  .eachoption{
+    margin-left: -115px;
+  }
+  .success-btn,
+  .open-btn,
+  .get-btn {
+    width: 100%; 
+    height: 36px; 
+  }
+
+  .eachoption {
+    flex-direction: column; 
+    width: 100%; 
+  }
+  
+  .bottom-button-section {
+    flex-direction: row; 
+  }
+  .months-section-monthly, .from-section-monthly, .days-selection-section, .end-date-section-monthly , .from-section-weekly , .days-selection-section-weekly, .lsa-section-monthly{ 
+    align-items: center;
+    width: 100%;
+  }
+  .weekly-selection{
+    margin-left: -4px;
+  }
+   .days-selection-section .select-days{
+    width: 390px;
+    Button{
+      margin-left: -4px;
+    }
+   }
+   .select-days-weekly {
+    Button{
+      margin-left: -3px;
+      margin-top: 7px;
+    }
+   }
+  
+  .from-section,
+  .to,
+  .ends-section {
+    margin: 10px 0; 
+  }
+
+  .dialog-overlay {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+  }
+
+  .dialog-box {
+    background: white; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    max-width: 420px; 
+    padding: 25px 25px; 
+    overflow: auto; 
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .lsa-sections input{
+    width: 85px;
+    padding: 6px;
+    margin-right: -12px;
+  }
+  .from-section,
+  .ends-section {
+    width: 100%; 
+    margin-bottom: 15px; 
+    margin-left: 20px;
+  }
+
+  .form-control.date-picker {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+  }
+  .monthly-box{
+    padding-left: 8px;
+  }
+  .bottom-button-section {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+  }
+  .daily-bottom-section{
+    margin-top: -30px;
+  }
+  .eachoption2 {
+    margin-left: 17px;
+  }
+  .close-button,
+  .done-button {
+    width: 90px;
+    text-align: center; 
+    cursor: pointer; 
+    margin: 5px 0; 
+  }
+   .end-date-section-monthly .monthly-date-picker{
+    width: 150px;
+   }
+  .close-button {
+    border-radius: 4px; 
+  }
+  .weekly-box{
+    padding-left: 30px;
+  }
+  .done-button {
+    border-radius: 4px; 
+  }
+
+  h6 {
+    font-size: 16px; 
+  }
+
+  strong {
+    font-size: 14px; 
+  }
+}

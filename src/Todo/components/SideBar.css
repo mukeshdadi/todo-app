@@ -1,0 +1,146 @@
+:root {
+    --bg-sidebar: linear-gradient(135deg, #001f3f, #0074D9);
+    --text-dark: #FFFFFF;
+    --hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+.big-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--bg-sidebar);
+    margin-top:60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 190px;
+    color: var(--text-dark);
+    padding: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+    z-index: 3000;
+}
+.small-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--bg-sidebar);
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 70px;
+    color: var(--text-dark);
+    padding: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+}
+
+.each-element {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.each-element:hover {
+    background-color: var(--hover-bg);
+}
+
+.element-text {
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 8px;
+}
+@media(max-width:1200px){
+    .big-container{
+        margin-top: 65px;
+    }
+    .small-container{
+        margin-top: 65px;
+    }
+}
+@media (max-width: 900px) {
+    .each-element {
+        padding: 8px;
+    }
+
+    .element-text {
+        font-size: 14px;
+    }
+
+    .each-element svg {
+        font-size: 20px;
+    }
+    .small-container{
+        margin-top: 70px;
+    }
+    .big-container{
+        margin-top: 70px;
+    }
+}
+@media(max-width:792px){
+    .small-container{
+        margin-top: 70px;
+    }
+    .big-container{
+        margin-top: 70px;
+    }
+}
+@media(max-width:778px){
+    .small-container{
+        margin-top: 75px;
+    }
+    .big-container{
+        margin-top: 75px;
+    }
+}
+@media(max-width:580px) {
+    .big-container {
+        
+        width: 100%;
+        padding: 5px;
+        height: 140px;
+    }
+    .small-container {
+        
+        width: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .each-element {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 420px) {
+    .big-container {
+        
+        width: 100%;
+        padding: 5px;
+        height: 140px;
+    }
+    .small-container {
+        width: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .each-element {
+        padding: 6px;
+    }
+
+    .element-text {
+        font-size: 14px;
+    }
+
+    .each-element svg {
+        font-size: 18px;
+    }
+}

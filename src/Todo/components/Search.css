@@ -1,0 +1,211 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  align-items: center;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.search {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  color: #2E2E2E;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.todo-table th,
+.todo-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: #2E2E2E;
+}
+
+.todo-table th {
+  background-color: #002D72;
+  color: white;
+}
+
+.todo-table tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.todo-table tr:hover {
+  background-color: #E0F7FA;
+}
+
+.todo-table td {
+  text-align: center;
+}
+
+.todo-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.ant-btn.danger {
+  background-color: #FF4C4C;
+  color: white;
+}
+
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 728px) {
+  .search-container {
+    padding: 10px;
+    margin: auto;
+  }
+  .search {
+    padding-left: 70px;
+  }
+  .title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .input-section {
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .form-control {
+    font-size: 13px;
+    padding: 6px;
+    max-width: 100%;
+  }
+
+  .todo-table {
+    font-size: 12px;
+  }
+
+  .todo-table th,
+  .todo-table td {
+    padding: 8px;
+  }
+  
+  .todo-table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .ant-btn.danger {
+    font-size: 12px;
+  }
+
+  .ant-pagination {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+@media(max-width:580px) {
+  .todo-table {
+    min-width: 100%;
+    margin-left: -50px;
+    padding: 5px;
+  }
+  .search-container {
+    margin-left: -10px;
+  }
+  :where(.css-dev-only-do-not-override-14i19y2).ant-table-wrapper .ant-table-tbody>tr>td {
+    font-size: x-small;
+    padding: 12px 5px;
+  }
+}
+
+@media(max-width:500px) {
+  .todo-table {
+    padding: 5px;
+    margin-left: 10px;
+    
+  }
+  .ant-table-cell {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 420px) {
+  .search-container {
+    padding: 7px;
+    margin-right: -10px;
+    font-size: 8px;
+  }
+  .search-title {
+    width: 60px;
+  }
+  .search {
+    padding-left: 25px;
+    padding-top: 50px;
+    margin-left: 20px;
+    width: 100%;
+  }
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .input-section {
+    margin-top: 15px;
+    justify-content: flex-start;
+  }
+
+  .form-control {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .todo-table {
+    font-size: 11px;
+  }
+
+  .todo-table th,
+  .todo-table td {
+    padding: 3px;
+  }
+
+  .todo-table th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .ant-btn.danger {
+    font-size: 11px;
+  }
+
+  .ant-pagination {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}
